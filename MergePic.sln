@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptureTool", "MergePic\CaptureTool.csproj", "{D35D0661-EC33-4C14-8C7E-B0E46FFB79B4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Install", "Install\Install.vdproj", "{13FD3C5D-3141-4282-9FB8-B1F002AE81E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35D0661-EC33-4C14-8C7E-B0E46FFB79B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35D0661-EC33-4C14-8C7E-B0E46FFB79B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35D0661-EC33-4C14-8C7E-B0E46FFB79B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35D0661-EC33-4C14-8C7E-B0E46FFB79B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13FD3C5D-3141-4282-9FB8-B1F002AE81E5}.Debug|Any CPU.ActiveCfg = Debug
+		{13FD3C5D-3141-4282-9FB8-B1F002AE81E5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
