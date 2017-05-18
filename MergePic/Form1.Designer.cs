@@ -955,9 +955,11 @@
             // cb9
             // 
             this.cb9.AutoSize = true;
+            this.cb9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb9.ForeColor = System.Drawing.Color.Blue;
             this.cb9.Location = new System.Drawing.Point(30, 244);
             this.cb9.Name = "cb9";
-            this.cb9.Size = new System.Drawing.Size(73, 21);
+            this.cb9.Size = new System.Drawing.Size(78, 21);
             this.cb9.TabIndex = 9;
             this.cb9.Text = "de_DE";
             this.cb9.UseVisualStyleBackColor = true;
@@ -975,9 +977,11 @@
             // cb11
             // 
             this.cb11.AutoSize = true;
+            this.cb11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb11.ForeColor = System.Drawing.Color.Red;
             this.cb11.Location = new System.Drawing.Point(115, 31);
             this.cb11.Name = "cb11";
-            this.cb11.Size = new System.Drawing.Size(73, 21);
+            this.cb11.Size = new System.Drawing.Size(78, 21);
             this.cb11.TabIndex = 11;
             this.cb11.Text = "en_US";
             this.cb11.UseVisualStyleBackColor = true;
@@ -1005,9 +1009,11 @@
             // cb14
             // 
             this.cb14.AutoSize = true;
+            this.cb14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb14.ForeColor = System.Drawing.Color.Blue;
             this.cb14.Location = new System.Drawing.Point(115, 112);
             this.cb14.Name = "cb14";
-            this.cb14.Size = new System.Drawing.Size(71, 21);
+            this.cb14.Size = new System.Drawing.Size(76, 21);
             this.cb14.TabIndex = 14;
             this.cb14.Text = "es_ES";
             this.cb14.UseVisualStyleBackColor = true;
@@ -1015,9 +1021,11 @@
             // cb15
             // 
             this.cb15.AutoSize = true;
+            this.cb15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb15.ForeColor = System.Drawing.Color.Blue;
             this.cb15.Location = new System.Drawing.Point(115, 136);
             this.cb15.Name = "cb15";
-            this.cb15.Size = new System.Drawing.Size(73, 21);
+            this.cb15.Size = new System.Drawing.Size(78, 21);
             this.cb15.TabIndex = 15;
             this.cb15.Text = "es_MX";
             this.cb15.UseVisualStyleBackColor = true;
@@ -1075,9 +1083,11 @@
             // cb21
             // 
             this.cb21.AutoSize = true;
+            this.cb21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb21.ForeColor = System.Drawing.Color.Blue;
             this.cb21.Location = new System.Drawing.Point(206, 31);
             this.cb21.Name = "cb21";
-            this.cb21.Size = new System.Drawing.Size(65, 21);
+            this.cb21.Size = new System.Drawing.Size(70, 21);
             this.cb21.TabIndex = 21;
             this.cb21.Text = "fr_FR";
             this.cb21.UseVisualStyleBackColor = true;
@@ -1155,9 +1165,11 @@
             // cb29
             // 
             this.cb29.AutoSize = true;
+            this.cb29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb29.ForeColor = System.Drawing.Color.Blue;
             this.cb29.Location = new System.Drawing.Point(206, 244);
             this.cb29.Name = "cb29";
-            this.cb29.Size = new System.Drawing.Size(57, 21);
+            this.cb29.Size = new System.Drawing.Size(62, 21);
             this.cb29.TabIndex = 29;
             this.cb29.Text = "it_IT";
             this.cb29.UseVisualStyleBackColor = true;
@@ -1315,9 +1327,11 @@
             // cb45
             // 
             this.cb45.AutoSize = true;
+            this.cb45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb45.ForeColor = System.Drawing.Color.Blue;
             this.cb45.Location = new System.Drawing.Point(379, 136);
             this.cb45.Name = "cb45";
-            this.cb45.Size = new System.Drawing.Size(66, 21);
+            this.cb45.Size = new System.Drawing.Size(71, 21);
             this.cb45.TabIndex = 45;
             this.cb45.Text = "pl_PL";
             this.cb45.UseVisualStyleBackColor = true;
@@ -1325,9 +1339,11 @@
             // cb46
             // 
             this.cb46.AutoSize = true;
+            this.cb46.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb46.ForeColor = System.Drawing.Color.Blue;
             this.cb46.Location = new System.Drawing.Point(379, 163);
             this.cb46.Name = "cb46";
-            this.cb46.Size = new System.Drawing.Size(69, 21);
+            this.cb46.Size = new System.Drawing.Size(74, 21);
             this.cb46.TabIndex = 46;
             this.cb46.Text = "pt_BR";
             this.cb46.UseVisualStyleBackColor = true;
@@ -1355,9 +1371,11 @@
             // cb49
             // 
             this.cb49.AutoSize = true;
+            this.cb49.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb49.ForeColor = System.Drawing.Color.Blue;
             this.cb49.Location = new System.Drawing.Point(379, 244);
             this.cb49.Name = "cb49";
-            this.cb49.Size = new System.Drawing.Size(71, 21);
+            this.cb49.Size = new System.Drawing.Size(76, 21);
             this.cb49.TabIndex = 49;
             this.cb49.Text = "ru_RU";
             this.cb49.UseVisualStyleBackColor = true;
@@ -1465,9 +1483,11 @@
             // cb60
             // 
             this.cb60.AutoSize = true;
+            this.cb60.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb60.ForeColor = System.Drawing.Color.Blue;
             this.cb60.Location = new System.Drawing.Point(470, 268);
             this.cb60.Name = "cb60";
-            this.cb60.Size = new System.Drawing.Size(66, 21);
+            this.cb60.Size = new System.Drawing.Size(71, 21);
             this.cb60.TabIndex = 60;
             this.cb60.Text = "tr_TR";
             this.cb60.UseVisualStyleBackColor = true;
@@ -1495,9 +1515,11 @@
             // cb63
             // 
             this.cb63.AutoSize = true;
+            this.cb63.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb63.ForeColor = System.Drawing.Color.Blue;
             this.cb63.Location = new System.Drawing.Point(554, 85);
             this.cb63.Name = "cb63";
-            this.cb63.Size = new System.Drawing.Size(67, 21);
+            this.cb63.Size = new System.Drawing.Size(72, 21);
             this.cb63.TabIndex = 63;
             this.cb63.Text = "vi_VN";
             this.cb63.UseVisualStyleBackColor = true;
@@ -1525,9 +1547,11 @@
             // cb66
             // 
             this.cb66.AutoSize = true;
+            this.cb66.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb66.ForeColor = System.Drawing.Color.Blue;
             this.cb66.Location = new System.Drawing.Point(554, 163);
             this.cb66.Name = "cb66";
-            this.cb66.Size = new System.Drawing.Size(75, 21);
+            this.cb66.Size = new System.Drawing.Size(80, 21);
             this.cb66.TabIndex = 66;
             this.cb66.Text = "zh_TW";
             this.cb66.UseVisualStyleBackColor = true;
@@ -1546,10 +1570,12 @@
             // cb68
             // 
             this.cb68.AutoSize = true;
+            this.cb68.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb68.ForeColor = System.Drawing.Color.Blue;
             this.cb68.Location = new System.Drawing.Point(645, 136);
             this.cb68.Name = "cb68";
             this.cb68.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cb68.Size = new System.Drawing.Size(71, 21);
+            this.cb68.Size = new System.Drawing.Size(76, 21);
             this.cb68.TabIndex = 68;
             this.cb68.Text = "ar_EG";
             this.cb68.UseVisualStyleBackColor = true;
