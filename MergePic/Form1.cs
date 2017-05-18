@@ -708,9 +708,9 @@ namespace MergePic
             p.Start();
             List<string> lc = new List<string>();
             List<string> cmds = new List<string>();
+            string languge = "";
             //cmds.Add("cd C:\\adbForACT");
-            cmds.Add("adb shell getprop persist.sys.language");
-            cmds.Add("adb shell getprop persist.sys.country");
+            cmds.Add("adb shell getprop persist.sys.locale");
             //cmds.Add("pause");
             //依次输入我们需要的命令行
             foreach (string cmd in cmds)
@@ -726,34 +726,34 @@ namespace MergePic
             {
                 string stmp = p.StandardOutput.ReadLine();
                 //rstBuilder.Append(stmp + Environment.NewLine);
-                if (stmp.Length.Equals(2))
+                if (stmp.Length.Equals(5))
                 {
-                    lc.Add(stmp);
+                    languge = stmp;
                 }
             }
-            if (lc.Count.Equals(2))
-            {
-                listBoxLog.Items.Add("System Language is : " + lc.ElementAt(0));
-                listBoxLog.Items.Add("System Country is : " + lc.ElementAt(1));
-                labelLanguage.Text = lc.ElementAt(0) + "_" + lc.ElementAt(1);
-                language = lc.ElementAt(0);
-                country = lc.ElementAt(1);
-            }
-            else
-            {
-                listBoxLog.Items.Add("wait a moment, try again.");
-            }
+            labelLanguage.Text = language.Replace("-","_");
+            //if (lc.Count.Equals(2))
+            //{
+            //    listBoxLog.Items.Add("System Language is : " + lc.ElementAt(0));
+            //    listBoxLog.Items.Add("System Country is : " + lc.ElementAt(1));
+            //    labelLanguage.Text = lc.ElementAt(0) + "_" + lc.ElementAt(1);
+            //    language = lc.ElementAt(0);
+            //    country = lc.ElementAt(1);
+            //}
+            //else
+            //{
+            //    listBoxLog.Items.Add("wait a moment, try again.");
+            //}
         }
         public string CheckLanguage()
         {
             //check the system language
             string getLanguage="";
             p.Start();
-            List<string> lc = new List<string>();
+            //List<string> lc = new List<string>();
             List<string> cmds = new List<string>();
             //cmds.Add("cd C:\\adbForACT");
-            cmds.Add("adb shell getprop persist.sys.language");
-            cmds.Add("adb shell getprop persist.sys.country");
+            cmds.Add("adb shell getprop persist.sys.locale");
             //cmds.Add("pause");
             //依次输入我们需要的命令行
             foreach (string cmd in cmds)
@@ -769,24 +769,25 @@ namespace MergePic
             {
                 string stmp = p.StandardOutput.ReadLine();
                 //rstBuilder.Append(stmp + Environment.NewLine);
-                if (stmp.Length.Equals(2))
+                if (stmp.Length.Equals(5))
                 {
-                    lc.Add(stmp);
+                    getLanguage=stmp;
                 }
             }
-            if (lc.Count.Equals(2))
-            {
-                listBoxLog.Items.Add("System Language is : " + lc.ElementAt(0));
-                listBoxLog.Items.Add("System Country is : " + lc.ElementAt(1));
-                labelLanguage.Text = lc.ElementAt(0) + "_" + lc.ElementAt(1);
-                getLanguage=lc.ElementAt(0) + "_" + lc.ElementAt(1);
-                language = lc.ElementAt(0);
-                country = lc.ElementAt(1);
-            }
-            else
-            {
-                listBoxLog.Items.Add("wait a moment, try again.");
-            }
+            labelLanguage.Text = getLanguage.Replace("-","_");
+            //if (lc.Count.Equals(2))
+            //{
+            //    listBoxLog.Items.Add("System Language is : " + lc.ElementAt(0));
+            //    listBoxLog.Items.Add("System Country is : " + lc.ElementAt(1));
+            //    labelLanguage.Text = lc.ElementAt(0) + "_" + lc.ElementAt(1);
+            //    getLanguage=lc.ElementAt(0) + "_" + lc.ElementAt(1);
+            //    language = lc.ElementAt(0);
+            //    country = lc.ElementAt(1);
+            //}
+            //else
+            //{
+            //    listBoxLog.Items.Add("wait a moment, try again.");
+            //}
             return getLanguage;
         }
 
@@ -855,6 +856,7 @@ namespace MergePic
                     };
                     buttonCheckLanguage_Click(sender, e);
                     buttonAdbDevice_Click(sender, e);
+                    labelLanguage.Text = CheckLanguage();
                     listBoxLog.Items.Add(DateTime.Now.ToString() + " " + "change langage to " + labelLanguage.Text);
                     listBoxLog.TopIndex = listBoxLog.Items.Count - 1;
                     if (languageHistory.Contains("ar_") ||
