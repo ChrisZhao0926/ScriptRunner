@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace MergePic
 {
@@ -1419,6 +1420,79 @@ namespace MergePic
                     cb.Checked = true;
                 }
                 
+            }
+        }
+
+        private void buttonLocal_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialogLocal.RootFolder = Environment.SpecialFolder.Desktop;
+            if (folderBrowserDialogLocal.ShowDialog() == DialogResult.OK)
+            {
+                textBoxLocal.Text = folderBrowserDialogLocal.SelectedPath;
+            }
+        }
+
+        private void buttonXML_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialogXML.SelectedPath = @"\\SEMCW27980\MenuTree";
+            if (folderBrowserDialogXML.ShowDialog() == DialogResult.OK)
+            {
+                textBoxXML.Text = folderBrowserDialogXML.SelectedPath;
+            }
+        }
+
+        private void buttonCompare_Click(object sender, EventArgs e)
+        {
+            List<String> listLocal = new List<string>();
+            List<String> listServer = new List<string>();
+            if (textBoxLocal.Text == "" || textBoxXML.Text == "" )
+            {
+                MessageBox.Show("Please select compare path first! ", "Warning");
+            }
+            else
+            {
+                listLocal.Clear();
+                listServer.Clear();
+                listBoxLocal.Items.Clear();
+                listBoxServer.Items.Clear();
+                //get all image name without language code
+                DirectoryInfo CurrentDir = new DirectoryInfo(textBoxLocal.Text);
+                foreach (FileInfo f in CurrentDir.GetFiles())
+                {
+                    if (f.Name != "Thumbs.db")
+                    {
+                        string imageName = f.Name.Substring(0, f.Name.Length - 10);
+                        listLocal.Add(imageName);
+                    }
+                }
+                FileInfo fileInfo = new FileInfo(this.folderBrowserDialogXML.SelectedPath + "\\data.xml");
+                if (fileInfo.Exists == false)
+                {
+                    MessageBox.Show("Data File Error ! xml file not exist! ", "Warning");
+                }
+                else
+                {
+                    XmlDocument xmlDocument = new XmlDocument();
+                    xmlDocument.Load(fileInfo.ToString());
+                    XmlNodeList nodeList = xmlDocument.GetElementsByTagName("Item");
+                    foreach (XmlNode node in nodeList)
+                    {
+                        listServer.Add(node.Attributes["Name"].Value);
+                    }
+                }
+                List<String> listCompare = listServer.Except(listLocal).ToList();
+                labelMiss.Text = "Missing: " + listCompare.Count;
+                foreach (string i in listCompare)
+                {
+                    listBoxLocal.Items.Add(i);
+                }
+                listCompare.Clear();
+                listCompare = listLocal.Except(listServer).ToList();
+                labelMore.Text = "Superfluous: " + listCompare.Count;
+                foreach (string i in listCompare)
+                {
+                    listBoxServer.Items.Add(i);
+                }
             }
         }
     }

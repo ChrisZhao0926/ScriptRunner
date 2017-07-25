@@ -200,6 +200,22 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mailToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBoxLocal = new System.Windows.Forms.TextBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textBoxXML = new System.Windows.Forms.TextBox();
+            this.buttonLocal = new System.Windows.Forms.Button();
+            this.buttonXML = new System.Windows.Forms.Button();
+            this.buttonCompare = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.listBoxLocal = new System.Windows.Forms.ListBox();
+            this.listBoxServer = new System.Windows.Forms.ListBox();
+            this.folderBrowserDialogLocal = new System.Windows.Forms.FolderBrowserDialog();
+            this.folderBrowserDialogXML = new System.Windows.Forms.FolderBrowserDialog();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.labelMiss = new System.Windows.Forms.Label();
+            this.labelMore = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -215,6 +231,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowDevice)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -665,13 +685,14 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(166, 20);
-            this.toolStripStatusLabel1.Text = "V2.03     Chris CAV OMV";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(141, 20);
+            this.toolStripStatusLabel1.Text = "V3.0     Chris V3 GSV";
             // 
             // tabMerge
             // 
             this.tabMerge.Controls.Add(this.tabPage1);
             this.tabMerge.Controls.Add(this.tabPage2);
+            this.tabMerge.Controls.Add(this.tabPage3);
             this.tabMerge.Location = new System.Drawing.Point(16, 40);
             this.tabMerge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabMerge.Name = "tabMerge";
@@ -2154,6 +2175,147 @@
             this.mailToToolStripMenuItem.Text = "Letter to author";
             this.mailToToolStripMenuItem.Click += new System.EventHandler(this.mailToToolStripMenuItem_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabPage3.Controls.Add(this.groupBox11);
+            this.tabPage3.Controls.Add(this.buttonCompare);
+            this.tabPage3.Controls.Add(this.groupBox10);
+            this.tabPage3.Controls.Add(this.groupBox8);
+            this.tabPage3.Controls.Add(this.groupBox12);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1492, 709);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Compare";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.buttonLocal);
+            this.groupBox8.Controls.Add(this.textBoxLocal);
+            this.groupBox8.Location = new System.Drawing.Point(33, 30);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(674, 84);
+            this.groupBox8.TabIndex = 0;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "local";
+            // 
+            // textBoxLocal
+            // 
+            this.textBoxLocal.Location = new System.Drawing.Point(16, 32);
+            this.textBoxLocal.Name = "textBoxLocal";
+            this.textBoxLocal.Size = new System.Drawing.Size(525, 22);
+            this.textBoxLocal.TabIndex = 0;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.buttonXML);
+            this.groupBox10.Controls.Add(this.textBoxXML);
+            this.groupBox10.Location = new System.Drawing.Point(33, 120);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(674, 86);
+            this.groupBox10.TabIndex = 0;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Server";
+            // 
+            // textBoxXML
+            // 
+            this.textBoxXML.Location = new System.Drawing.Point(16, 32);
+            this.textBoxXML.Name = "textBoxXML";
+            this.textBoxXML.Size = new System.Drawing.Size(525, 22);
+            this.textBoxXML.TabIndex = 0;
+            // 
+            // buttonLocal
+            // 
+            this.buttonLocal.Image = ((System.Drawing.Image)(resources.GetObject("buttonLocal.Image")));
+            this.buttonLocal.Location = new System.Drawing.Point(575, 15);
+            this.buttonLocal.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLocal.Name = "buttonLocal";
+            this.buttonLocal.Size = new System.Drawing.Size(60, 57);
+            this.buttonLocal.TabIndex = 8;
+            this.buttonLocal.UseVisualStyleBackColor = true;
+            this.buttonLocal.Click += new System.EventHandler(this.buttonLocal_Click);
+            // 
+            // buttonXML
+            // 
+            this.buttonXML.Image = ((System.Drawing.Image)(resources.GetObject("buttonXML.Image")));
+            this.buttonXML.Location = new System.Drawing.Point(575, 15);
+            this.buttonXML.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonXML.Name = "buttonXML";
+            this.buttonXML.Size = new System.Drawing.Size(60, 57);
+            this.buttonXML.TabIndex = 8;
+            this.buttonXML.UseVisualStyleBackColor = true;
+            this.buttonXML.Click += new System.EventHandler(this.buttonXML_Click);
+            // 
+            // buttonCompare
+            // 
+            this.buttonCompare.Image = ((System.Drawing.Image)(resources.GetObject("buttonCompare.Image")));
+            this.buttonCompare.Location = new System.Drawing.Point(756, 76);
+            this.buttonCompare.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCompare.Name = "buttonCompare";
+            this.buttonCompare.Size = new System.Drawing.Size(89, 72);
+            this.buttonCompare.TabIndex = 10;
+            this.buttonCompare.UseVisualStyleBackColor = true;
+            this.buttonCompare.Click += new System.EventHandler(this.buttonCompare_Click);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.labelMore);
+            this.groupBox11.Controls.Add(this.labelMiss);
+            this.groupBox11.Controls.Add(this.listBoxServer);
+            this.groupBox11.Controls.Add(this.listBoxLocal);
+            this.groupBox11.Location = new System.Drawing.Point(16, 227);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(1427, 464);
+            this.groupBox11.TabIndex = 11;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Result";
+            // 
+            // listBoxLocal
+            // 
+            this.listBoxLocal.FormattingEnabled = true;
+            this.listBoxLocal.ItemHeight = 16;
+            this.listBoxLocal.Location = new System.Drawing.Point(28, 62);
+            this.listBoxLocal.Name = "listBoxLocal";
+            this.listBoxLocal.Size = new System.Drawing.Size(633, 372);
+            this.listBoxLocal.TabIndex = 0;
+            // 
+            // listBoxServer
+            // 
+            this.listBoxServer.FormattingEnabled = true;
+            this.listBoxServer.ItemHeight = 16;
+            this.listBoxServer.Location = new System.Drawing.Point(723, 62);
+            this.listBoxServer.Name = "listBoxServer";
+            this.listBoxServer.Size = new System.Drawing.Size(633, 372);
+            this.listBoxServer.TabIndex = 0;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Location = new System.Drawing.Point(16, 14);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(1427, 207);
+            this.groupBox12.TabIndex = 1;
+            this.groupBox12.TabStop = false;
+            // 
+            // labelMiss
+            // 
+            this.labelMiss.AutoSize = true;
+            this.labelMiss.Location = new System.Drawing.Point(25, 30);
+            this.labelMiss.Name = "labelMiss";
+            this.labelMiss.Size = new System.Drawing.Size(63, 17);
+            this.labelMiss.TabIndex = 0;
+            this.labelMiss.Text = "Missing: ";
+            // 
+            // labelMore
+            // 
+            this.labelMore.AutoSize = true;
+            this.labelMore.Location = new System.Drawing.Point(720, 30);
+            this.labelMore.Name = "labelMore";
+            this.labelMore.Size = new System.Drawing.Size(88, 17);
+            this.labelMore.TabIndex = 0;
+            this.labelMore.Text = "Superfluous:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2198,6 +2360,13 @@
             this.tabPage2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2376,6 +2545,22 @@
         private System.Windows.Forms.CheckBox cb3;
         private System.Windows.Forms.CheckBox cb5;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Button buttonCompare;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Button buttonXML;
+        private System.Windows.Forms.TextBox textBoxXML;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button buttonLocal;
+        private System.Windows.Forms.TextBox textBoxLocal;
+        private System.Windows.Forms.ListBox listBoxServer;
+        private System.Windows.Forms.ListBox listBoxLocal;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialogLocal;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialogXML;
+        private System.Windows.Forms.Label labelMore;
+        private System.Windows.Forms.Label labelMiss;
+        private System.Windows.Forms.GroupBox groupBox12;
     }
 }
 
